@@ -7,13 +7,14 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_feed.*
 
 class FeedActivity : AppCompatActivity() {
 
     private lateinit var  auth:FirebaseAuth
-    private lateinit var db: FirebaseStorage
+    private lateinit var db: FirebaseFirestore
     var userEmailFromFB:ArrayList<String> = ArrayList()
     var userCommentFromFB: ArrayList<String> = ArrayList()
     var userImageFromFB: ArrayList<String> = ArrayList()
@@ -24,7 +25,7 @@ class FeedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed)
         auth= FirebaseAuth.getInstance()
-        db= FirebaseStorage.getInstance()
+        db= FirebaseFirestore.getInstance()
 
         getDataFromFirestore()
         //recyclerview
@@ -59,6 +60,7 @@ class FeedActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
     fun getDataFromFirestore() {
+       
 
     }
 }
