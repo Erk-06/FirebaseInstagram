@@ -41,6 +41,23 @@ auth= FirebaseAuth.getInstance()
      }
     }
     fun signUpClicked(view:View){
+  val emailText=userEmailText.text.toString()
+        val password=passwordText.text.toString()
+        auth.createUserWithEmailAndPassword(emailText,password).addOnCompleteListener { task ->
+
+            if (task.isSuccessful){
+                val intent = Intent(applicationContext,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener { exception ->
+
+            if (exception!=null)
+            {
+                Toast.makeText(applicationContext,""+exception.localizedMessage,Toast.LENGTH_LONG)
+
+            }
+        }
 
     }
 }
