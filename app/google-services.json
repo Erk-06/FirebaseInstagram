@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304174654411",
+    "firebase_url": "https://fir-instagram-830f8.firebaseio.com",
+    "project_id": "fir-instagram-830f8",
+    "storage_bucket": "fir-instagram-830f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304174654411:android:fccdb7de9bf89ad730cc4e",
+        "android_client_info": {
+          "package_name": "com.erdi.karabulut.firebaseinstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304174654411-hrd38i6b7uor1gte83e7729gv52lu529.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEXDSqK691bzaID0igbRL6aVGHe1LhyH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304174654411-hrd38i6b7uor1gte83e7729gv52lu529.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
