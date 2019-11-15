@@ -13,6 +13,8 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -20,6 +22,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+
     }
 }
 
@@ -34,8 +38,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:19.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:multidex:1.0.3'
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
 }
 apply plugin: 'com.google.gms.google-services'
